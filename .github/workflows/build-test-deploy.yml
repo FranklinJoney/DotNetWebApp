@@ -1,1 +1,16 @@
-
+name: webapp-build-test-deploy
+ on:
+  push:
+   paths:
+    - 'wwwroot.**'
+    - '.github/workflows/build-test-deploy.yml'  
+  workflow_dispatch:
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+          - name: Set up dotnet build environment
+            run: dotnet --list--runtimes
+            run: dotnet --list--sdks
+            run: dotnet build  
