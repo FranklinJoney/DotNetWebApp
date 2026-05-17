@@ -16,7 +16,5 @@ jobs:
           dotnet --list-sdks
       - name: Build web app
         run: dotnet build MyWebApp/MyWebApp.csproj
-        working-directory: ./src/WebApp
-      - name: Test web app
-        run: build MyWebApp/MyWebApp.csproj
-        working-directory: ./src/WebApp
+      - name: Run tests
+        run: dotnet test MyWebApp.Tests/MyWebApp.Tests.csproj
