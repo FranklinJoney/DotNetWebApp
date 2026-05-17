@@ -15,4 +15,5 @@ jobs:
         run: dotnet --list-runtimes
              dotnet --list-sdks
              dotnet build
-             dotnet test
+      - name: Run tests
+        run: dotnet test

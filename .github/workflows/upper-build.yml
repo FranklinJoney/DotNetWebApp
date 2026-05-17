@@ -1,0 +1,10 @@
+name : upper-build
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '.github/workflows/upper-build.yml'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
