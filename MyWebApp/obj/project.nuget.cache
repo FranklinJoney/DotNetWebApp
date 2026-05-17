@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V3Xvf5ZSoTk=",
+  "dgSpecHash": "4oGQYbKGWE0=",
   "success": true,
-  "projectFilePath": "/workspaces/DotNetWebApp/MyWebApp/MyWebApp.csproj",
+  "projectFilePath": "E:\\Franklin\\DevOps\\GitHubActions\\DotNetWebApp\\MyWebApp\\MyWebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
