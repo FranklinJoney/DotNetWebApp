@@ -15,8 +15,8 @@ jobs:
           dotnet --list-runtimes
           dotnet --list-sdks
       - name: Build web app
-        run: dotnet build MyWebApp/MyWebApp.csproj
-        working-directory: ${{ github.workspace }}
-      - name: Run tests
+        run: dotnet build
+        working-directory: ./src/WebApp
+      - name: Test web app
         run: dotnet test
-        working-directory: ${{ github.workspace }}
+        working-directory: ./src/WebApp
